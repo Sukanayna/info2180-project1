@@ -1,4 +1,9 @@
 /* Add your CSS to this file */
+*{
+    box-sizing:border-box;
+    padding: auto;
+}
+
 body {
     margin: 0;
     font-size: 16px;
@@ -8,4 +13,113 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    float: left;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    float:right;
+    list-style:none;
+}
+
+.overview-hero{
+    padding:30px 0;
+}
+
+.overview-hero .container{
+    display:flex;
+    align-items: center;
+    gap:30px;
+}
+
+.overview-hero-image img{
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+.learn-about{
+    padding: 60px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card img{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+}
+
+.card{
+    border: 1px solid rgb(134, 131, 131);
+    border-radius: 5px;
+    box-shadow:0 2px 4px rgba(116, 114, 114, 0.842);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body{
+    padding:30px;
+}
+
+.testing {
+    padding:30px;
+}
+
+.testing .container{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+
+.testing-desciption{
+    flex:1;
+    float:left;
+
+}
+.cta {
+    float:right;
+}
+
+.stories article{
+    display:flex;
+    gap:30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.stories article img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.newsletter{
+    text-align: center;
+
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+footer{
+    padding:30px;
 }
